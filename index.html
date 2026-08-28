@@ -36,6 +36,26 @@
   table{border-collapse:collapse;width:100%;margin:12px 0;font-size:15px}
   th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
   th{color:var(--quiet);font-weight:600;font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+
+  /* On a phone these two tables were unreadable. A two-column table cannot
+     shrink below the widest unbreakable thing in it, and column one holds
+     `RECEIVE_BOOT_COMPLETED` in a monospace pill - so column one took the
+     screen and the explanation beside it was squeezed to about six characters
+     wide, running down the page as a thin ribbon of text.
+
+     Below 560px the rows stop being rows: the term goes on its own line with
+     the explanation beneath it, which is what a definition list would have
+     been had this been written for a phone first. The header row goes with
+     them, because "THING / STATUS" over a stack of blocks labels nothing. */
+  @media (max-width:560px){
+    table{font-size:15px}
+    table, tbody, tr, td{display:block;width:100%}
+    table tr:first-child{display:none}
+    tr{border-bottom:1px solid var(--rule);padding:12px 0}
+    tr:last-child{border-bottom:0}
+    td{border:0;padding:0}
+    td:first-child{font-weight:600;margin-bottom:4px}
+  }
 </style>
 </head>
 <body>
@@ -60,9 +80,11 @@
 <main>
 
 <section>
-  <p class="lead"><strong>OpiArto collects nothing, sends nothing, and has no
-  way to.</strong> The app has no internet permission and contains no
-  networking code, so everything you type into it stays on your phone.</p>
+  <p class="lead"><strong>OpiArto collects nothing and sends nothing.</strong>
+  It contains no networking code, no analytics and no advertising, so
+  everything you type into it stays on your phone. The app does hold Android's
+  internet permission, unused, so that a later version is able to ask whether
+  it must be updated — never to carry your work off the device.</p>
   <p class="quiet">The rest of this page says the same thing in the detail a
   reviewer, or a careful reader, will want.</p>
 </section>
