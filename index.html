@@ -52,7 +52,7 @@
     </svg>
     <div>
       <h1>OpiArto — Privacy Policy</h1>
-      <p class="sub">Last updated 28 August 2026</p>
+      <p class="sub">Last updated 29 August 2026</p>
     </div>
   </div>
 </header>
@@ -85,10 +85,17 @@
     <li>Your settings, including the name you choose to be greeted by</li>
   </ul>
   <p>All of it is written to the app's own private storage on your device,
-  which no other app can read. None of it is sent anywhere, because there is
-  nowhere for it to be sent: <strong>the app requests no
-  <code>INTERNET</code> permission</strong>, and Android will not let an app
-  without it open a network connection.</p>
+  which no other app can read, and <strong>none of it is sent anywhere</strong>.</p>
+  <p>The app does hold the <code>INTERNET</code> permission. As of this version
+  it opens no network connection of its own and transmits nothing at all. The
+  permission is held so that a later release is able to ask whether it is still
+  current and whether it must be updated before it is used — a question a copy
+  of the app already on a phone cannot start asking unless the permission was
+  there from the beginning. What you put into the app is not part of that
+  question: your assignments, notes, grades, attendance and tracked time are
+  not uploaded, and are not what any such check would send. If that ever
+  changes, this page is updated before the version that changes it is
+  published.</p>
 </section>
 
 <section>
@@ -97,10 +104,10 @@
     <tr><th>Thing</th><th>Status</th></tr>
     <tr><td>Analytics or usage statistics</td><td>None. No analytics SDK is present.</td></tr>
     <tr><td>Advertising, ad identifiers, tracking</td><td>None. No ad SDK is present.</td></tr>
-    <tr><td>Crash reporting sent off the device</td><td>None.</td></tr>
+    <tr><td>Crash reporting sent off the device</td><td>None. The app contains no crash-reporting library. Google Play separately shows a developer anonymous crash reports from phones whose owners have chosen to share diagnostics with Google — that is a setting in your own phone, part of Android rather than of this app, and the app takes no part in it.</td></tr>
     <tr><td>Accounts, sign-in, cloud sync</td><td>None. There is no account to make.</td></tr>
     <tr><td>Location, contacts, camera, microphone</td><td>Never requested.</td></tr>
-    <tr><td>Third-party libraries that phone home</td><td>None. The app uses Google's AndroidX and Material interface libraries only.</td></tr>
+    <tr><td>Third-party libraries that phone home</td><td>None that report anything about you. The app uses Google's AndroidX and Material interface libraries, and Google Play's in-app update library — which asks the Play Store app already on your phone whether a newer version of OpiArto exists, and tells neither this app nor its developer anything about you.</td></tr>
   </table>
   <p>This is what the Data safety section of the app's Google Play listing
   declares: <strong>no data collected, no data shared</strong>.</p>
@@ -117,6 +124,14 @@
       notification settings screen rather than at first launch, so you can see
       what it would be used for before deciding. Refusing it leaves the rest of
       the app working.</td>
+    </tr>
+    <tr>
+      <td><code>INTERNET</code></td>
+      <td>Held, and unused as of this version. It lets a later release ask
+      whether it is still current and whether it must be updated before it can
+      be used. It is here before there is anything to ask because a copy of the
+      app already installed cannot gain the permission by itself. It is not
+      used to send what you put into the app.</td>
     </tr>
     <tr>
       <td><code>RECEIVE_BOOT_COMPLETED</code></td>
