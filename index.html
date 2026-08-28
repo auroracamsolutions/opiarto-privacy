@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpiArto — Privacy Policy</title>
+<style>
+  :root{
+    --ground:#F2F5F9; --card:#FFFFFF; --ink:#1B2430; --quiet:#5B6675;
+    --rule:#DCE3EB; --accent:#2F6BFF; --slate:#2F4858;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --ground:#151C24; --card:#1D262F; --ink:#E8EDF3; --quiet:#9AA7B4;
+           --rule:#2C3742; --accent:#7FA6FF; --slate:#0F161C; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ground);color:var(--ink);
+       font:16px/1.65 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  header{background:var(--slate);color:#fff;padding:40px 24px}
+  .bar{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:18px}
+  h1{font-size:26px;margin:0;font-weight:600;letter-spacing:-.2px}
+  .sub{margin:4px 0 0;color:#B9C6D3;font-size:15px}
+  main{max-width:760px;margin:0 auto;padding:8px 24px 64px}
+  section{background:var(--card);border:1px solid var(--rule);border-radius:14px;
+          padding:22px 26px;margin:22px 0}
+  h2{font-size:18px;margin:0 0 10px;font-weight:600}
+  p{margin:10px 0}
+  ul{margin:10px 0;padding-left:22px}
+  li{margin:6px 0}
+  .lead{font-size:18px}
+  .quiet{color:var(--quiet)}
+  code{background:rgba(127,127,127,.14);padding:1px 6px;border-radius:5px;
+       font:14px ui-monospace,Consolas,monospace}
+  a{color:var(--accent)}
+  footer{max-width:760px;margin:0 auto;padding:0 24px 56px;color:var(--quiet);font-size:14px}
+  table{border-collapse:collapse;width:100%;margin:12px 0;font-size:15px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+  th{color:var(--quiet);font-weight:600;font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <svg width="56" height="56" viewBox="0 0 108 108" aria-hidden="true">
+      <g transform="translate(54,54) scale(1.3) translate(-54,-54)">
+        <path d="M69.9,46.6 A17.5,17.5 0 1 1 58.5,37.1" fill="none" stroke="#FFFFFF"
+              stroke-width="8" stroke-linecap="round"/>
+        <path d="M44.8,54 L51.9,62.4 L72.5,33.8" fill="none" stroke="#4C82FF"
+              stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </svg>
+    <div>
+      <h1>OpiArto — Privacy Policy</h1>
+      <p class="sub">Last updated 28 August 2026</p>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section>
+  <p class="lead"><strong>OpiArto collects nothing, sends nothing, and has no
+  way to.</strong> The app has no internet permission and contains no
+  networking code, so everything you type into it stays on your phone.</p>
+  <p class="quiet">The rest of this page says the same thing in the detail a
+  reviewer, or a careful reader, will want.</p>
+</section>
+
+<section>
+  <h2>Who is responsible</h2>
+  <p>OpiArto is published by Aurora CAM Solutions. Questions about this policy,
+  or about the app, go to
+  <a href="mailto:auroracamsolutions@gmail.com">auroracamsolutions@gmail.com</a>.</p>
+</section>
+
+<section>
+  <h2>What the app holds, and where</h2>
+  <p>OpiArto is a study planner. It keeps what you put into it:</p>
+  <ul>
+    <li>Assignments, projects, exams and their deadlines, notes and tasks</li>
+    <li>Courses, timetables and class times</li>
+    <li>Attendance you have marked, and grades you have entered</li>
+    <li>Time you have tracked against a piece of work</li>
+    <li>Your settings, including the name you choose to be greeted by</li>
+  </ul>
+  <p>All of it is written to the app's own private storage on your device,
+  which no other app can read. None of it is sent anywhere, because there is
+  nowhere for it to be sent: <strong>the app requests no
+  <code>INTERNET</code> permission</strong>, and Android will not let an app
+  without it open a network connection.</p>
+</section>
+
+<section>
+  <h2>What is not collected</h2>
+  <table>
+    <tr><th>Thing</th><th>Status</th></tr>
+    <tr><td>Analytics or usage statistics</td><td>None. No analytics SDK is present.</td></tr>
+    <tr><td>Advertising, ad identifiers, tracking</td><td>None. No ad SDK is present.</td></tr>
+    <tr><td>Crash reporting sent off the device</td><td>None.</td></tr>
+    <tr><td>Accounts, sign-in, cloud sync</td><td>None. There is no account to make.</td></tr>
+    <tr><td>Location, contacts, camera, microphone</td><td>Never requested.</td></tr>
+    <tr><td>Third-party libraries that phone home</td><td>None. The app uses Google's AndroidX and Material interface libraries only.</td></tr>
+  </table>
+  <p>This is what the Data safety section of the app's Google Play listing
+  declares: <strong>no data collected, no data shared</strong>.</p>
+</section>
+
+<section>
+  <h2>Permissions, and why each one exists</h2>
+  <table>
+    <tr><th>Permission</th><th>What it is for</th></tr>
+    <tr>
+      <td><code>POST_NOTIFICATIONS</code></td>
+      <td>To show you a reminder before a deadline, and to show a running study
+      timer in the notification shade. The app asks for it on its own
+      notification settings screen rather than at first launch, so you can see
+      what it would be used for before deciding. Refusing it leaves the rest of
+      the app working.</td>
+    </tr>
+    <tr>
+      <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+      <td>Android clears every scheduled alarm when the phone restarts. This
+      lets the app lay your reminders down again afterwards, so a phone
+      restarted on Sunday is not a week without reminders.</td>
+    </tr>
+  </table>
+  <p>There are no others.</p>
+</section>
+
+<section>
+  <h2>Files you choose yourself</h2>
+  <p>Two features touch files, and both happen through Android's own file
+  picker — the app never browses your storage on its own, and receives only the
+  single file you point it at:</p>
+  <ul>
+    <li><strong>Importing a timetable.</strong> You pick a calendar export
+    (<code>.ics</code>) that your school gave you. It is read on the device,
+    turned into classes and deadlines, and that is the end of it.</li>
+    <li><strong>Backup and restore.</strong> You can write everything the app
+    holds to a single JSON file, wherever you choose to put it — your own
+    storage, or a cloud folder if that is where you send it. That file is
+    yours: the app does not upload it, and cannot. If you place it in a
+    service's folder, that service's privacy policy applies to it, not this
+    one.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Deleting your data</h2>
+  <p>Uninstalling OpiArto deletes everything it holds, because everything it
+  holds is on your device. There is no server copy to ask about and no account
+  to close. If you have written backup files, deleting those is up to you.</p>
+</section>
+
+<section>
+  <h2>Your rights under the GDPR</h2>
+  <p>The GDPR gives you the right to see the personal data an organisation
+  holds about you, to correct it, and to have it erased. Aurora CAM Solutions
+  holds none: nothing you enter into OpiArto ever reaches us, so there is
+  nothing for us to disclose, correct or delete. You hold your own data, on
+  your own device, and the app gives you a way to export all of it and a way to
+  destroy all of it.</p>
+</section>
+
+<section>
+  <h2>Children</h2>
+  <p>OpiArto is a study planner, and it may well be used by people under 16.
+  That changes nothing here: the app collects no personal data from anyone, of
+  any age, and transmits none.</p>
+</section>
+
+<section>
+  <h2>Changes to this policy</h2>
+  <p>If the app ever gains a feature that touches the network — there is no
+  such plan — this page will say so before that version is released, and the
+  date at the top will change. The page is public and its history is public, so
+  what it said on any given day can be checked.</p>
+</section>
+
+</main>
+
+<footer>
+  <p>Aurora CAM Solutions ·
+  <a href="mailto:auroracamsolutions@gmail.com">auroracamsolutions@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
