@@ -7,11 +7,15 @@ That URL is what the Google Play listing points at, and Play requires it to
 stay reachable for as long as the app is published. The repository holds
 nothing but the page: no app source, no keys.
 
-**It is private as of 29 August 2026, and the page is therefore offline.**
-GitHub Pages does not serve a private repository on a free plan — it
-unpublished the site rather than pausing it, so making the repository public
-again also means re-enabling Pages. That has to happen before the Play listing
-is filled in, because Play checks the URL.
+**It is public as of 6 September 2026, and the page is live again.**
+
+Keep it that way. GitHub Pages does not serve a private repository on a free
+plan, and when this repository was made private on 29 August it *unpublished*
+the site rather than pausing it: the URL began returning 404 and the Pages
+configuration was gone from the API, so restoring it meant making the
+repository public **and** switching Pages back on. Play checks this URL, and an
+app whose privacy policy 404s is an app whose listing is in trouble — so making
+this repository private again is not a small or reversible thing to do.
 
 The policy's central claim — that nothing the student types leaves the device —
 is checkable against the app itself: it contains no networking code. The
